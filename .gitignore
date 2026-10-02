@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+mdm_ip_lab.db
+.vscode/
+.env
