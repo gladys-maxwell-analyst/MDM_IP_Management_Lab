@@ -235,43 +235,8 @@ If this lab were extended toward an enterprise design, the next architectural im
 9. Database hardening and backups
 10. Platform-specific controls for Windows, Android, iOS/macOS, and Linux
 
-## Portfolio Description
-
-### Short CV Version
-
 **IP-Based Mobile Device Management (MDM) Lab — Python**  
 Built a one-file endpoint management lab that registers authorized devices, collects system telemetry, monitors heartbeat status, evaluates basic health/compliance rules, persists device data in SQLite, and maintains an audit log through a local web dashboard.
-
-### LinkedIn Version
-
-I built a lightweight **IP-Based MDM Lab in Python** to strengthen my practical cybersecurity and endpoint-management skills.
-
-The project demonstrates device registration, IP-based inventory, heartbeat monitoring, system telemetry, health/compliance checks, SQLite persistence, dashboard monitoring, and audit logging.
-
-One of my key takeaways was understanding that an IP address can help identify a device's network location, but **it should not be treated as secure authentication**.
-
-This project strengthened my understanding of endpoint visibility, monitoring, compliance, logging, and secure system design.
-
-#Cybersecurity #Python #EndpointSecurity #MDM #InformationSecurity #SecurityOperations #CybersecurityProjects #GitHub
-
-## Interview Talking Points
-
-If asked to explain the project in an interview:
-
-**What did you build?**  
-I built a lightweight MDM lab in Python that allows an authorized endpoint to register with a management server and periodically send system telemetry.
-
-**How does it work?**  
-The endpoint agent collects information such as hostname, IP address, OS, disk and memory usage, battery level, and uptime. It sends that information to the server, which stores it in SQLite and presents it through a web dashboard.
-
-**How did you monitor availability?**  
-The agent sends a heartbeat every 15 seconds. The server uses recent check-ins to determine whether the device is online or offline.
-
-**How did you handle compliance?**  
-I implemented simple threshold-based rules for disk usage, memory usage, and battery level to demonstrate basic endpoint compliance monitoring.
-
-**What is the security limitation?**  
-The biggest limitation is that IP addresses are not strong device identities. In a production environment I would use TLS and cryptographic device authentication, along with RBAC, secure secrets, and signed management operations.
 
 ## Ethical / Authorized Use
 
